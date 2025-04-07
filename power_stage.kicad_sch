@@ -195,6 +195,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Q_NIGBT_GCE"
 			(pin_names
 				(offset 0)
@@ -736,16 +875,28 @@
 		)
 	)
 	(junction
-		(at 173.99 115.57)
+		(at 152.4 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a9ebd842-f24e-4ac5-9d88-04ddff426f68")
+		(uuid "2ec00fea-61df-43a7-89c2-33cc980fa6a7")
 	)
 	(junction
-		(at 173.99 69.85)
+		(at 187.96 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e20bb87e-73df-4aa1-9250-3b6f0f89ad1e")
+		(uuid "5b95a594-270a-433b-8666-9be2d282a052")
+	)
+	(junction
+		(at 222.25 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79b1e1da-8340-47b9-84ad-faeb9dcae2a7")
+	)
+	(junction
+		(at 187.96 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b49c024b-cab4-4a18-89cd-55285555d762")
 	)
 	(wire
 		(pts
@@ -759,13 +910,63 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 110.49) (xy 209.55 115.57)
+			(xy 222.25 76.2) (xy 222.25 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06f692d3-58cf-476b-b887-c093d5be0f22")
+	)
+	(wire
+		(pts
+			(xy 152.4 82.55) (xy 152.4 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d6e5601-581e-419c-b3d9-c4bb9ebb51b5")
+	)
+	(wire
+		(pts
+			(xy 196.85 83.82) (xy 222.25 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11e6b02e-633d-43a2-bc1b-db3dccfbbce3")
+	)
+	(wire
+		(pts
+			(xy 222.25 97.79) (xy 222.25 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "17401205-2854-47c9-a50c-c5cddc1d0e8a")
+	)
+	(wire
+		(pts
+			(xy 152.4 82.55) (xy 176.53 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19688fc4-3741-4f9f-a1fd-e3f64b8ba75a")
+	)
+	(wire
+		(pts
+			(xy 152.4 59.69) (xy 152.4 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1da7fb12-c927-418a-b5c7-58ef5207a89e")
 	)
 	(wire
 		(pts
@@ -789,17 +990,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 69.85) (xy 209.55 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f5bd48a-5ee1-43af-9063-e06decc3239f")
-	)
-	(wire
-		(pts
-			(xy 173.99 67.31) (xy 173.99 69.85)
+			(xy 187.96 57.15) (xy 187.96 59.69)
 		)
 		(stroke
 			(width 0)
@@ -809,7 +1000,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 115.57) (xy 173.99 118.11)
+			(xy 187.96 102.87) (xy 187.96 105.41)
 		)
 		(stroke
 			(width 0)
@@ -819,7 +1010,17 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 69.85) (xy 209.55 78.74)
+			(xy 187.96 102.87) (xy 222.25 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "764f06bd-3f9d-467c-bcee-3ba3e00977d3")
+	)
+	(wire
+		(pts
+			(xy 222.25 59.69) (xy 222.25 68.58)
 		)
 		(stroke
 			(width 0)
@@ -829,17 +1030,17 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 78.74) (xy 139.7 69.85)
+			(xy 187.96 59.69) (xy 222.25 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "80f01fc2-df7a-4243-94c5-52db711e683c")
+		(uuid "7efa24ce-e53a-4c58-bab8-70caedadd06e")
 	)
 	(wire
 		(pts
-			(xy 139.7 115.57) (xy 139.7 110.49)
+			(xy 152.4 102.87) (xy 152.4 97.79)
 		)
 		(stroke
 			(width 0)
@@ -849,7 +1050,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 88.9) (xy 139.7 100.33)
+			(xy 152.4 76.2) (xy 152.4 82.55)
 		)
 		(stroke
 			(width 0)
@@ -869,23 +1070,23 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 69.85) (xy 173.99 69.85)
+			(xy 222.25 90.17) (xy 222.25 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc7ff169-7393-482f-adc5-d6b419bfc3fd")
+	)
+	(wire
+		(pts
+			(xy 152.4 59.69) (xy 187.96 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cb8c63f9-0c18-4f16-bdd4-544d324d5aaa")
-	)
-	(wire
-		(pts
-			(xy 209.55 88.9) (xy 209.55 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ceb9de2b-ce6d-44dc-bfba-8f713a2a1acd")
 	)
 	(wire
 		(pts
@@ -899,23 +1100,13 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 115.57) (xy 139.7 115.57)
+			(xy 152.4 102.87) (xy 187.96 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d9d1cd9f-03f7-46c4-8261-bb883d107499")
-	)
-	(wire
-		(pts
-			(xy 209.55 115.57) (xy 173.99 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea60dfcd-fa3a-4f6a-b412-8e6e8c814940")
 	)
 	(wire
 		(pts
@@ -988,8 +1179,78 @@
 		(uuid "f1b399d9-e61e-4b04-a76a-7b32daab985c")
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 222.25 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f38c3ac-7f79-45e0-8ec9-bd98303a0f84")
+		(property "Reference" "C11"
+			(at 226.06 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 226.06 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.2152 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 222.25 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 222.25 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bdad7c22-7d21-4524-b3ff-973f92f57811")
+		)
+		(pin "2"
+			(uuid "03c17367-c7bb-4eff-8605-a95edae16695")
+		)
+		(instances
+			(project ""
+				(path "/502e07b2-2298-4bcb-9609-8c0caf105dbf/7c64a56a-dc37-4d34-9dec-52255824658a"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+BATT")
-		(at 173.99 67.31 0)
+		(at 187.96 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -998,7 +1259,7 @@
 		(fields_autoplaced yes)
 		(uuid "28cf561f-f20e-4140-89d1-56ded01c36c7")
 		(property "Reference" "#PWR018"
-			(at 173.99 71.12 0)
+			(at 187.96 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1007,7 +1268,7 @@
 			)
 		)
 		(property "Value" "+PWR"
-			(at 173.99 62.23 0)
+			(at 187.96 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1015,7 +1276,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 67.31 0)
+			(at 187.96 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1024,7 +1285,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 67.31 0)
+			(at 187.96 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1033,7 +1294,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 173.99 67.31 0)
+			(at 187.96 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1071,7 +1332,7 @@
 				)
 			)
 		)
-		(property "Value" "12V_IN"
+		(property "Value" "GDT_SCDY_A"
 			(at 78.74 68.58 0)
 			(effects
 				(font
@@ -1122,17 +1383,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_NIGBT_GCE")
-		(at 207.01 83.82 0)
+		(lib_id "Device:C")
+		(at 222.25 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "65b4c927-2c77-469b-be37-4db3f913ef3e")
-		(property "Reference" "Q3"
-			(at 212.09 82.5499 0)
+		(uuid "6074eb05-60e0-4ad7-86b8-0bbec6b6222a")
+		(property "Reference" "C12"
+			(at 226.06 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1140,8 +1401,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "FGA60N65SMD"
-			(at 212.09 85.0899 0)
+		(property "Value" "C"
+			(at 226.06 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1149,8 +1410,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-3P-3_Vertical"
-			(at 212.09 81.28 0)
+		(property "Footprint" ""
+			(at 223.2152 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1159,7 +1420,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 207.01 83.82 0)
+			(at 222.25 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1167,28 +1428,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-IGBT transistor, gate/collector/emitter"
-			(at 207.01 83.82 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 222.25 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "3"
-			(uuid "13f5e5e4-d681-40bb-b33a-1ab2d711417c")
-		)
-		(pin "2"
-			(uuid "35c992de-0a06-4d45-91b6-2776c4106881")
 		)
 		(pin "1"
-			(uuid "1d9fc5a4-7265-4769-8069-61eb88e08fa5")
+			(uuid "b194fc8c-fefa-4f09-8dee-9f6fd8ef3de8")
+		)
+		(pin "2"
+			(uuid "29ecb1ff-e692-4a09-91ae-9916aa8c1803")
 		)
 		(instances
-			(project "pfc-drsstc"
+			(project ""
 				(path "/502e07b2-2298-4bcb-9609-8c0caf105dbf/7c64a56a-dc37-4d34-9dec-52255824658a"
-					(reference "Q3")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -1196,7 +1454,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 173.99 118.11 0)
+		(at 187.96 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1205,7 +1463,7 @@
 		(fields_autoplaced yes)
 		(uuid "af19f6de-8496-4a29-aaa3-127e1602642c")
 		(property "Reference" "#PWR016"
-			(at 173.99 123.19 0)
+			(at 187.96 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1214,7 +1472,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 173.863 121.92 0)
+			(at 187.833 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1222,7 +1480,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 119.38 0)
+			(at 187.96 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1231,7 +1489,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 119.38 0)
+			(at 187.96 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1240,7 +1498,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 173.99 118.11 0)
+			(at 187.96 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1262,80 +1520,7 @@
 	)
 	(symbol
 		(lib_id "Device:Q_NIGBT_GCE")
-		(at 207.01 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bcf54b76-bfbb-4d1b-9223-064ab8e908b0")
-		(property "Reference" "Q4"
-			(at 212.09 104.1399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "FGA60N65SMD"
-			(at 212.09 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-3P-3_Vertical"
-			(at 212.09 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 207.01 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-IGBT transistor, gate/collector/emitter"
-			(at 207.01 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "dc404890-d179-409a-97b1-ca2d95760821")
-		)
-		(pin "2"
-			(uuid "96678522-bc38-4165-9b97-061b23eec2d1")
-		)
-		(pin "1"
-			(uuid "27fad08c-791e-4b35-871c-6945dd343e54")
-		)
-		(instances
-			(project "pfc-drsstc"
-				(path "/502e07b2-2298-4bcb-9609-8c0caf105dbf/7c64a56a-dc37-4d34-9dec-52255824658a"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Q_NIGBT_GCE")
-		(at 137.16 83.82 0)
+		(at 149.86 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1344,7 +1529,7 @@
 		(fields_autoplaced yes)
 		(uuid "bf1e4758-7248-4a8b-bff6-f811ebcae47a")
 		(property "Reference" "Q1"
-			(at 142.24 82.5499 0)
+			(at 154.94 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1353,7 +1538,7 @@
 			)
 		)
 		(property "Value" "FGA60N65SMD"
-			(at 142.24 85.0899 0)
+			(at 154.94 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1362,7 +1547,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-3P-3_Vertical"
-			(at 142.24 81.28 0)
+			(at 154.94 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1371,7 +1556,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.16 83.82 0)
+			(at 149.86 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1380,7 +1565,7 @@
 			)
 		)
 		(property "Description" "N-IGBT transistor, gate/collector/emitter"
-			(at 137.16 83.82 0)
+			(at 149.86 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1425,7 +1610,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12V_IN"
+		(property "Value" "GDT_PRMY"
 			(at 59.69 82.5499 0)
 			(effects
 				(font
@@ -1494,7 +1679,7 @@
 				)
 			)
 		)
-		(property "Value" "12V_IN"
+		(property "Value" "GDT_SCDY_B"
 			(at 78.74 86.36 0)
 			(effects
 				(font
@@ -1546,7 +1731,7 @@
 	)
 	(symbol
 		(lib_id "Device:Q_NIGBT_GCE")
-		(at 137.16 105.41 0)
+		(at 149.86 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1555,7 +1740,7 @@
 		(fields_autoplaced yes)
 		(uuid "f3c10e58-fb97-408c-a65d-9f5c0871f9db")
 		(property "Reference" "Q2"
-			(at 142.24 104.1399 0)
+			(at 154.94 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1564,7 +1749,7 @@
 			)
 		)
 		(property "Value" "FGA60N65SMD"
-			(at 142.24 106.6799 0)
+			(at 154.94 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1573,7 +1758,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-3P-3_Vertical"
-			(at 142.24 102.87 0)
+			(at 154.94 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1582,7 +1767,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.16 105.41 0)
+			(at 149.86 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1591,7 +1776,7 @@
 			)
 		)
 		(property "Description" "N-IGBT transistor, gate/collector/emitter"
-			(at 137.16 105.41 0)
+			(at 149.86 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)

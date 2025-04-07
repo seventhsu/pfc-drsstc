@@ -1181,6 +1181,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 35.56) (xy 172.72 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dc02997-2482-4788-b3b0-6b7bba9555ad")
+	)
+	(wire
+		(pts
 			(xy 204.47 58.42) (xy 204.47 59.69)
 		)
 		(stroke
@@ -1441,6 +1451,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 33.02) (xy 172.72 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1bc412f-e908-44df-aadb-70ad0d16cdf7")
+	)
+	(wire
+		(pts
 			(xy 180.34 93.98) (xy 193.04 93.98)
 		)
 		(stroke
@@ -1458,6 +1478,26 @@
 			(type default)
 		)
 		(uuid "ff73a9ca-ccec-4090-9c80-f8b33ac220fe")
+	)
+	(label "MAINS_LINE"
+		(at 172.72 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "be1541e4-3503-4b38-a27f-ebc4a3f44063")
+	)
+	(label "MAINS_NEUT"
+		(at 172.72 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bf7a6066-000e-4033-92f5-239f2ef58f47")
 	)
 	(symbol
 		(lib_id "Regulator_Linear:MCP1703Ax-330xxDB")
@@ -2014,7 +2054,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dad0d011-e427-4ff6-9c8a-bf994592cd71")
-		(property "Reference" "J1"
+		(property "Reference" "J5"
 			(at 151.13 43.18 0)
 			(effects
 				(font
@@ -2066,7 +2106,7 @@
 		(instances
 			(project ""
 				(path "/502e07b2-2298-4bcb-9609-8c0caf105dbf"
-					(reference "J1")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -2340,6 +2380,74 @@
 			(project ""
 				(path "/502e07b2-2298-4bcb-9609-8c0caf105dbf"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 151.13 35.56 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffeb0067-ff44-4054-aa97-8fed95aff5b4")
+		(property "Reference" "J1"
+			(at 151.13 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AC_IN"
+			(at 151.13 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+			(at 151.13 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.13 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 151.13 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d5b277f5-eada-4b54-a05f-415207946d5d")
+		)
+		(pin "1"
+			(uuid "65150790-9ed2-42fb-97e0-bd88ed9b5b16")
+		)
+		(instances
+			(project "pfc-drsstc"
+				(path "/502e07b2-2298-4bcb-9609-8c0caf105dbf"
+					(reference "J1")
 					(unit 1)
 				)
 			)
