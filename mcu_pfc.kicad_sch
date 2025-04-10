@@ -5025,13 +5025,13 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 184.15 44.45 90)
+		(at 184.15 44.45 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0f5f2411-770c-466a-a8c1-45a6ae2da020")
 		(property "Reference" "L1"
 			(at 184.15 39.37 90)
