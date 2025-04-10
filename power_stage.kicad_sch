@@ -1320,6 +1320,16 @@
 		)
 		(uuid "2452fe3c-8b45-4f34-bdbc-90bbdc8c1e32")
 	)
+	(text "0.1u polypropylene capacitor + primary winding in series"
+		(exclude_from_sim no)
+		(at 161.798 102.616 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c871d65a-1dfb-4214-a632-09172302d31b")
+	)
 	(junction
 		(at 93.98 80.01)
 		(diameter 0)
@@ -1408,7 +1418,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 93.98) (xy 195.58 93.98)
+			(xy 162.56 93.98) (xy 195.58 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1428,7 +1438,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 93.98) (xy 140.97 93.98)
+			(xy 125.73 93.98) (xy 160.02 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1445,16 +1455,6 @@
 			(type default)
 		)
 		(uuid "1da7fb12-c927-418a-b5c7-58ef5207a89e")
-	)
-	(wire
-		(pts
-			(xy 170.18 93.98) (xy 148.59 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "226fa087-1b82-4e1f-9f02-0861182b6260")
 	)
 	(wire
 		(pts
@@ -1658,7 +1658,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 93.98) (xy 172.72 92.71)
+			(xy 162.56 93.98) (xy 162.56 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1728,7 +1728,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 92.71) (xy 170.18 93.98)
+			(xy 160.02 92.71) (xy 160.02 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1845,16 +1845,6 @@
 			(justify right bottom)
 		)
 		(uuid "987e3d43-82a1-499d-99a1-4c247268064a")
-	)
-	(label "LC_CAPSIDE"
-		(at 152.4 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e20b77cb-a03f-4d38-bbee-33fdf20f6b65")
 	)
 	(hierarchical_label "GDT_A+"
 		(shape input)
@@ -2447,7 +2437,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 170.18 87.63 90)
+		(at 162.56 87.63 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2455,7 +2446,7 @@
 		(dnp no)
 		(uuid "bdf5a2f2-bda1-4743-8423-3f672b7ab426")
 		(property "Reference" "J6"
-			(at 175.26 86.3599 90)
+			(at 157.48 86.3599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2464,7 +2455,7 @@
 			)
 		)
 		(property "Value" "PRMY"
-			(at 175.26 88.8999 90)
+			(at 157.48 88.8999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2473,7 +2464,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
-			(at 170.18 87.63 0)
+			(at 162.56 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2482,7 +2473,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 170.18 87.63 0)
+			(at 162.56 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2491,7 +2482,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 170.18 87.63 0)
+			(at 162.56 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2793,74 +2784,6 @@
 			(project "pfc-drsstc"
 				(path "/502e07b2-2298-4bcb-9609-8c0caf105dbf/7c64a56a-dc37-4d34-9dec-52255824658a"
 					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 144.78 93.98 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fdb89e66-76e4-46d6-ba0c-77f61729c418")
-		(property "Reference" "C7"
-			(at 144.78 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1u POLYPROPYLENE"
-			(at 144.78 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 93.0148 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 144.78 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 144.78 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "64425261-1c26-4bbe-baac-79a187b42b0b")
-		)
-		(pin "1"
-			(uuid "0f142b22-6a74-4e43-8f51-caac56b1a8a0")
-		)
-		(instances
-			(project ""
-				(path "/502e07b2-2298-4bcb-9609-8c0caf105dbf/7c64a56a-dc37-4d34-9dec-52255824658a"
-					(reference "C7")
 					(unit 1)
 				)
 			)
