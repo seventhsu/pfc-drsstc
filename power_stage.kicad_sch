@@ -1979,7 +1979,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF 630V"
+		(property "Value" "1u film"
 			(at 199.39 80.0099 0)
 			(effects
 				(font
@@ -2115,7 +2115,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF 630V"
+		(property "Value" "1u film"
 			(at 199.39 114.2999 0)
 			(effects
 				(font
